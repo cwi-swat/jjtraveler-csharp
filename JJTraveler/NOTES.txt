@@ -1,0 +1,11 @@
+
+HashSet?
+Collection?
+BaseList?
+
+Howto Object.CLone in C#? (see NestingDepth.cs)
+
+Unfinished:
+-DefUse
+-CollectTest has been implemented slightly differently because C# doesn't have the Collection datatype
+-VisitableList

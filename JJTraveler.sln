@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JJTraveler", "JJTraveler\JJTraveler.csproj", "{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{AE68AC41-9068-4079-9EF3-E2AB454EABB6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{9735CB2D-FB16-4ADD-9F51-90FDBDAE0D89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE68AC41-9068-4079-9EF3-E2AB454EABB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE68AC41-9068-4079-9EF3-E2AB454EABB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE68AC41-9068-4079-9EF3-E2AB454EABB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE68AC41-9068-4079-9EF3-E2AB454EABB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9735CB2D-FB16-4ADD-9F51-90FDBDAE0D89}.Debug|Any CPU.ActiveCfg = Debug
+		{9735CB2D-FB16-4ADD-9F51-90FDBDAE0D89}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

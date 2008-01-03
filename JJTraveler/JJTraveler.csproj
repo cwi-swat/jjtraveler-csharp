@@ -1,0 +1,311 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD5060EF-5B38-4FAA-81D0-911CBDBD12BA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>JJTraveler</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JJTraveler</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotUnit">
+      <Name>dotUnit</Name>
+      <HintPath>..\..\..\Program Files\dotUnit\bin\dotUnit.DLL</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\DefinedCombinator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Event.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\ICollector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\IStateVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\IVisitable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\IVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\VisitFailure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Backtrack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\All.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Choice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\DoWhileSuccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Fail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\GuaranteeSuccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Identity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\IfThenElse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Not.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\One.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Some.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\Try.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Combinators\VoidVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\DefUse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\FailAtNodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\LogVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\NestingDepth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\SucceedAtNodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\SuccessCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\TimeLogVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\AllSpinesBottomUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\BottomUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\BreadthFirst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\BreadthFirstWhile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\Child.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\Collect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\Descendant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\DownUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\OnceBottomUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\OnceBreadthFirst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\OnceTopDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\SpineBottomUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\SpineTopDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\TopDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\TopDownUntil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Traversal\TopDownWhile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\AllSpinesBottomUpTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\AllTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ChildTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\CollectTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\DescendantTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\DoWhileSuccessTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\FailAtNodesTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\FailTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\IdentityTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\IfThenElseTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\LibraryTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\LoggerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\NestingDepthTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\NodeVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\OnceTopDownTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\OneTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\SomeTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\SpineBottomUpTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\SpineTopDownTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\SuccessCounterTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\TimeLogVisitorTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\TopDownUntilTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\VisitorTestCase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="NOTES.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
